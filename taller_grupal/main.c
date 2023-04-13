@@ -24,6 +24,7 @@ int main (int argc, char *argv[]) {
         printf("e) Radiador (Precio: $120)\n");
 
         printf("Ingrese la letra del producto  factutar :\n ");
+        fflush(stdin);
         scanf("%c", &opcion);
 
         switch (opcion){
@@ -80,7 +81,8 @@ int main (int argc, char *argv[]) {
             Totald = Total;
         }
 
-        printf("Desea incertar otro producto 1: SI  2: NO \n");
+        printf("Desea incertar otro producto 1: SI  2: NO \n");\
+        fflush(stdin);
         scanf("%f", &SN);
 
     } while (SN != 2 );
