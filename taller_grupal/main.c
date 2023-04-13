@@ -63,10 +63,10 @@ int main (int argc, char *argv[]) {
         }
 
         St1 = Cantidad1 * P1;
-        St1 = Cantidad2 * P2;
-        St1 = Cantidad3 * P3;
-        St1 = Cantidad4 * P4;
-        St1 = Cantidad5 * P5;
+        St2 = Cantidad2 * P2;
+        St3 = Cantidad3 * P3;
+        St4 = Cantidad4 * P4;
+        St5 = Cantidad5 * P5;
 
         Total = St1 + St2+ St3+ St4+ St5;
 
@@ -97,18 +97,18 @@ int main (int argc, char *argv[]) {
     printf ( " ************ FACTURA************ \n");
     printf ("Nombre: %s \n", Nombre);
     printf ("Cedula %s \n", Cedula);
-    printf ( " PRODUCTO         Valor unitario         CANTIDAD \n");
+    printf ( " PRODUCTO          CANTIDAD        VALOR UNITARIO  \n");
 
     if (Cantidad1 > 0 ){
-        printf (" Llantas   %.0f    %.2f    %.2f    ",Cantidad1, P1, Total);
-    }else if (Cantidad2 > 0) {
-        printf (" Pastillas   %.0f    %.2f    %.2f    ",Cantidad2, P2, Total);
-    }else if (Cantidad3 > 0) {
-        printf (" Embrage   %.0f    %.2f    %.2f    ",Cantidad3, P3, Total);
-    }else if (Cantidad4 > 0){
-        printf (" Faro  %.0f    %.2f    %.2f    ",Cantidad4, P4, Total);
-    }else if (Cantidad5 > 0){
-        printf (" Radiador   %.0f    %.2f    %.2f    ",Cantidad5, P5, Total);
+        printf (" Llantas       %.0f    %.2f    %.2f\n",Cantidad1, P1, St1);
+    }else if (Cantidad2 != 0) {
+        printf (" Pastillas     %.0f    %.2f    %.2f\n",Cantidad2, P2, St2);
+    }else if (Cantidad3 != 0) {
+        printf (" Embrage       %.0f    %.2f    %.2f\n",Cantidad3, P3, St3);
+    }else if (Cantidad4 != 0){
+        printf (" Faro          %.0f    %.2f    %.2f\n",Cantidad4, P4, St4);
+    }else if (Cantidad5 != 0){
+        printf (" Radiador      %.0f    %.2f    %.2f\n",Cantidad5, P5, St5);
     }
         
     printf ("El total a pagar es %.2f", Totald);      
