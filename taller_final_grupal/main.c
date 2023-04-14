@@ -128,13 +128,19 @@ int main (int argc, char *argv[]) {
                     printf("el total de descuento es 9%\n");
                 }
                 printf ("El total a pagar es %.2f\n", Totald);
+
+                return 0;
+                
                 break;
 
+
+
             default:
+
                 break;
             }
     } while (SN != 'c');
-    
+
     printf("Gracias por venir");
 
     return 0;
